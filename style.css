@@ -1,0 +1,156 @@
+/* Basic CSS reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  /* General body and headings */
+  body {
+    background-color: #F0F0F0;
+    font-family: Arial, sans-serif;
+  }
+  h1 {
+    text-align: center;
+    color: #A9A9A9;
+    font-size: 40px;
+    margin-top: 20px;
+  }
+
+  /* User input section */
+  .user-input {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .user-input input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+  }
+  .user-input button {
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: #FFD580;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .user-input button:disabled {
+    background-color: #D3D3D3;
+    cursor: not-allowed;
+  }
+
+  /* Dice and game buttons */
+  .main-grid {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .first-col, .second-col {
+    display: inline-block;
+    margin: 20px;
+  }
+  .dice i {
+    font-size: 50px;
+    color: #4CAF50;
+  }
+  button {
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #FFD580;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:disabled {
+    background-color: #D3D3D3;
+    cursor: not-allowed;
+  }
+  .number-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 10px;
+    margin: 20px auto;
+    width: 60%;
+  }
+
+  .number-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    background-color: #FFD580;
+    border: 2px solid #D3D3D3;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .number-box.shut {
+    background-color: red;
+    color: white;
+    cursor: not-allowed;
+    text-decoration: line-through;
+  }
+
+  /* Scorecard table */
+  #scorecard {
+    margin: 20px auto;
+    text-align: center;
+    width: 80%;
+    background-color: #FFFFFF;
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  #scorecard table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  #scorecard th, #scorecard td {
+    border: 1px solid #D3D3D3;
+    padding: 10px;
+    text-align: center;
+  }
+  #scorecard th {
+    background-color: #FFD580;
+  }
+  #scorecard td {
+    background-color: #FFF8DC;
+  }
+
+  /* Winner section */
+  #winner-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+  #winner-message {
+    font-size: 24px;
+    color: #4CAF50;
+    font-weight: bold;
+  }
+  #play-again-btn {
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  #play-again-btn:hover {
+    background-color: #45A049;
+  }
